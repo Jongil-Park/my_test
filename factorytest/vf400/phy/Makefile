@@ -1,0 +1,69 @@
+######################*license start*###################################
+# OCTEON SDK
+#
+# Copyright (c) 2003-2005 Cavium Networks. All rights reserved.
+#
+# This file, which is part of the OCTEON SDK from Cavium Networks,
+# contains proprietary and confidential information of Cavium Networks and
+# its suppliers.
+#
+# Any licensed reproduction, distribution, modification, or other use of
+# this file or the confidential information or patented inventions
+# embodied in this file is subject to your license agreement with Cavium
+# Networks. Unless you and Cavium Networks have agreed otherwise in
+# writing, the applicable license terms can be found at:
+# licenses/cavium-license-type2.txt
+#
+# All other use and disclosure is prohibited.
+#
+# Contact Cavium Networks at info@caviumnetworks.com for more information.
+
+#
+# File version info: $Id: Makefile 26394 2007-07-25 02:27:17Z rfranz $
+
+OCTEON_TARGET=linux_64
+
+ifndef OCTEON_ROOT
+OCTEON_ROOT = ../..
+endif
+
+#
+all: application-target tftp
+
+#  standard common Makefile fragment
+
+include $(OCTEON_ROOT)/common.mk
+
+#  include relevant component Makefile fragments
+
+dir := $(OCTEON_ROOT)/executive
+include $(dir)/cvmx.mk
+
+#  application specification
+
+TARGET = phy_spd100$(PREFIX)
+
+OBJS = $(OBJ_DIR)/phy_spd100.o
+CFLAGS_LOCAL = -g -O2 -W -Wall -Wno-unused-parameter -I$(OCTEON_ROOT)/executive
+include $(OCTEON_ROOT)/application.mk
+#
+
+run: $(TARGET)
+	oct-sim $(TARGET) -quiet -numcores=1
+
+run-linux:
+	# Please see README-Linux.txt for addition steps needed to
+	# run this example under Linux
+	cd $(OCTEON_ROOT)/linux/kernel_2.6; ./oct-linux -quiet -numcores=1
+
+tftp:
+	mips64-octeon-linux-gnu-strip -o ../phy_spd100 phy_spd100-linux_64
+
+strip:
+	mips64-octeon-linux-gnu-strip -o phy_spd100 phy_spd100-linux_64
+
+clean:
+	rm -f $(TARGET)
+	rm -f ../phy_spd100
+	rm -fr $(OBJ_DIR)
+	rm -f $(CVMX_CONFIG)

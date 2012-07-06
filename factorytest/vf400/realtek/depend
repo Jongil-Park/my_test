@@ -1,0 +1,1079 @@
+realtekpwr.o: realtekpwr.c \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtekpwr.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/alloca.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/unistd.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/posix_opt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/confname.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/getopt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/termios.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/termios.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ttydefaults.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/dirent.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/dirent.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/posix1_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/local_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/linux/limits.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/mount.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctl-types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/signal.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/signum.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/siginfo.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigaction.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigcontext.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigstack.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigthread.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/linux/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/errno-base.h \
+  def.h
+realtek_wrap_func.o: realtek/realtek_wrap_func.c \
+  realtek/./rtl8366rb_api.h realtek/./rtl8368s_asicdrv.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  realtek/./smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h \
+  realtek/./rtl8368s_reg.h realtek/./rtl8368s_errno.h realtek/./rtk_api.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/./rtk_api_ext.h realtek/rtk_api.h \
+  realtek/./rtl8367b_asicdrv_port.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/rtl8367b_asicdrv_unknownMulticast.h \
+  realtek/./realtek_wrap_func.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/unistd.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/posix_opt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/confname.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/getopt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h
+rtk_api.o: realtek/rtk_api.c realtek/rtl8367b_asicdrv_acl.h \
+  realtek/rtl8367b_asicdrv.h realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/rtl8367b_asicdrv_dot1x.h realtek/rtl8367b_asicdrv_qos.h \
+  realtek/rtl8367b_asicdrv_scheduling.h realtek/rtl8367b_asicdrv_fc.h \
+  realtek/rtl8367b_asicdrv_port.h \
+  realtek/rtl8367b_asicdrv_unknownMulticast.h \
+  realtek/rtl8367b_asicdrv_phy.h realtek/rtl8367b_asicdrv_igmp.h \
+  realtek/rtl8367b_asicdrv_rma.h realtek/rtl8367b_asicdrv_vlan.h \
+  realtek/rtl8367b_asicdrv_lut.h realtek/rtl8367b_asicdrv_led.h \
+  realtek/rtl8367b_asicdrv_svlan.h realtek/rtl8367b_asicdrv_meter.h \
+  realtek/rtl8367b_asicdrv_inbwctrl.h realtek/rtl8367b_asicdrv_storm.h \
+  realtek/rtl8367b_asicdrv_misc.h \
+  realtek/rtl8367b_asicdrv_portIsolation.h \
+  realtek/rtl8367b_asicdrv_cputag.h realtek/rtl8367b_asicdrv_trunking.h \
+  realtek/rtl8367b_asicdrv_mirror.h realtek/rtl8367b_asicdrv_mib.h \
+  realtek/rtl8367b_asicdrv_interrupt.h realtek/rtl8367b_asicdrv_green.h \
+  realtek/rtl8367b_asicdrv_eee.h realtek/rtl8367b_asicdrv_eav.h \
+  realtek/rtl8367b_asicdrv_hsb.h realtek/rtk_api.h realtek/rtk_api_ext.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8366rb_api.o: realtek/rtl8366rb_api.c realtek/rtl8366rb_api.h \
+  realtek/rtl8368s_asicdrv.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  realtek/smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h \
+  realtek/rtl8368s_reg.h realtek/rtl8368s_errno.h
+rtl8367b_asicdrv_acl.o: realtek/rtl8367b_asicdrv_acl.c \
+  realtek/rtl8367b_asicdrv_acl.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8367b_asicdrv_autofallback.o: realtek/rtl8367b_asicdrv_autofallback.c \
+  realtek/rtl8367b_asicdrv_autofallback.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/rtl8367b_asicdrv_phy.h
+rtl8367b_asicdrv.o: realtek/rtl8367b_asicdrv.c realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h
+rtl8367b_asicdrv_cputag.o: realtek/rtl8367b_asicdrv_cputag.c \
+  realtek/rtl8367b_asicdrv_cputag.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_dot1x.o: realtek/rtl8367b_asicdrv_dot1x.c \
+  realtek/rtl8367b_asicdrv_dot1x.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_eav.o: realtek/rtl8367b_asicdrv_eav.c \
+  realtek/rtl8367b_asicdrv_eav.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_eee.o: realtek/rtl8367b_asicdrv_eee.c \
+  realtek/rtl8367b_asicdrv_eee.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_eeelldp.o: realtek/rtl8367b_asicdrv_eeelldp.c \
+  realtek/rtl8367b_asicdrv_eeelldp.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_eeep.o: realtek/rtl8367b_asicdrv_eeep.c \
+  realtek/rtl8367b_asicdrv_eeep.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_fc.o: realtek/rtl8367b_asicdrv_fc.c \
+  realtek/rtl8367b_asicdrv_fc.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_gpio.o: realtek/rtl8367b_asicdrv_gpio.c \
+  realtek/rtl8367b_asicdrv_gpio.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_green.o: realtek/rtl8367b_asicdrv_green.c \
+  realtek/rtl8367b_asicdrv_green.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/rtl8367b_asicdrv_phy.h
+rtl8367b_asicdrv_hsb.o: realtek/rtl8367b_asicdrv_hsb.c \
+  realtek/rtl8367b_asicdrv_hsb.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_igmp.o: realtek/rtl8367b_asicdrv_igmp.c \
+  realtek/rtl8367b_asicdrv_igmp.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_inbwctrl.o: realtek/rtl8367b_asicdrv_inbwctrl.c \
+  realtek/rtl8367b_asicdrv_inbwctrl.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_interrupt.o: realtek/rtl8367b_asicdrv_interrupt.c \
+  realtek/rtl8367b_asicdrv_interrupt.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_led.o: realtek/rtl8367b_asicdrv_led.c \
+  realtek/rtl8367b_asicdrv_led.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_lut.o: realtek/rtl8367b_asicdrv_lut.c \
+  realtek/rtl8367b_asicdrv_lut.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8367b_asicdrv_meter.o: realtek/rtl8367b_asicdrv_meter.c \
+  realtek/rtl8367b_asicdrv_meter.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_mib.o: realtek/rtl8367b_asicdrv_mib.c \
+  realtek/rtl8367b_asicdrv_mib.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_mirror.o: realtek/rtl8367b_asicdrv_mirror.c \
+  realtek/rtl8367b_asicdrv_mirror.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_misc.o: realtek/rtl8367b_asicdrv_misc.c \
+  realtek/rtl8367b_asicdrv_misc.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_oam.o: realtek/rtl8367b_asicdrv_oam.c \
+  realtek/rtl8367b_asicdrv_oam.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_phy.o: realtek/rtl8367b_asicdrv_phy.c \
+  realtek/rtl8367b_asicdrv_phy.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_pkg.o: realtek/rtl8367b_asicdrv_pkg.c \
+  realtek/rtl8367b_asicdrv_pkg.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_port.o: realtek/rtl8367b_asicdrv_port.c \
+  realtek/rtl8367b_asicdrv_port.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  realtek/rtl8367b_asicdrv_unknownMulticast.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8367b_asicdrv_portIsolation.o:  \
+ realtek/rtl8367b_asicdrv_portIsolation.c \
+  realtek/rtl8367b_asicdrv_portIsolation.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_qos.o: realtek/rtl8367b_asicdrv_qos.c \
+  realtek/rtl8367b_asicdrv_qos.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_rldp.o: realtek/rtl8367b_asicdrv_rldp.c \
+  realtek/rtl8367b_asicdrv_rldp.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8367b_asicdrv_rma.o: realtek/rtl8367b_asicdrv_rma.c \
+  realtek/rtl8367b_asicdrv_rma.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_rrcp.o: realtek/rtl8367b_asicdrv_rrcp.c \
+  realtek/rtl8367b_asicdrv_rrcp.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_scheduling.o: realtek/rtl8367b_asicdrv_scheduling.c \
+  realtek/rtl8367b_asicdrv_scheduling.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_specialCongest.o:  \
+ realtek/rtl8367b_asicdrv_specialCongest.c \
+  realtek/rtl8367b_asicdrv_specialCongest.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_storm.o: realtek/rtl8367b_asicdrv_storm.c \
+  realtek/rtl8367b_asicdrv_storm.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_svlan.o: realtek/rtl8367b_asicdrv_svlan.c \
+  realtek/rtl8367b_asicdrv_svlan.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8367b_asicdrv_trunking.o: realtek/rtl8367b_asicdrv_trunking.c \
+  realtek/rtl8367b_asicdrv_trunking.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_unknownMulticast.o:  \
+ realtek/rtl8367b_asicdrv_unknownMulticast.c \
+  realtek/rtl8367b_asicdrv_unknownMulticast.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h
+rtl8367b_asicdrv_vlan.o: realtek/rtl8367b_asicdrv_vlan.c \
+  realtek/rtl8367b_asicdrv_vlan.h realtek/rtl8367b_asicdrv.h \
+  realtek/rtk_types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  realtek/rtk_error.h realtek/rtl8367b_reg.h realtek/rtl8367b_base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h
+rtl8368s_asicdrv.o: realtek/rtl8368s_asicdrv.c realtek/rtl8368s_asicdrv.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  realtek/smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h \
+  realtek/rtl8368s_reg.h realtek/rtl8368s_errno.h
+smi.o: realtek/smi.c \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctl-types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ttydefaults.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/unistd.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/posix_opt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/confname.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/getopt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/signal.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/signum.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/siginfo.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigaction.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigcontext.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigstack.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigthread.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/setjmp.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/setjmp.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/syslog.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/syslog.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/syslog-path.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/linux/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/errno-base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/ctype.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/alloca.h \
+  realtek/smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h \
+  realtek/smi_imp.h
+smi_imp.o: realtek/smi_imp.c \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/features.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/cdefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wordsize.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/gnu/stubs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/typesizes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stddef.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/endian.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/byteswap.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/select.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigset.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/time.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/sysmacros.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/pthreadtypes.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctls.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/ioctl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/ioctl-types.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/ttydefaults.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stat.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sgidefs.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/unistd.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/posix_opt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/confname.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/getopt.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/signal.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/signum.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/siginfo.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigaction.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigcontext.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigstack.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sigthread.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/fcntl.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/setjmp.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/setjmp.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/syslog.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/sys/syslog.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../lib/gcc/mips64-octeon-linux-gnu/4.3.3/include/stdarg.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/syslog-path.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/libio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/_G_config.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/wchar.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio_lim.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/sys_errlist.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/stdio.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/linux/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm/errno.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/asm-generic/errno-base.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/ctype.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/string2.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdlib.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/alloca.h \
+  realtek/cavium_octeon_gpio.h realtek/smi.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/stdint.h \
+  /usr/local/Cavium_Networks/OCTEON-SDK-2.1.0/tools-gcc-4.3/bin/../mips64-octeon-linux-gnu/sys-root/usr/include/bits/wchar.h
