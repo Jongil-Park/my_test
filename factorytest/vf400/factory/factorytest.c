@@ -11,16 +11,16 @@ extern const char *infNameList[];
 void display_pass_msg(void)
 {
   PRINT_MSG("\n\r");
-  PRINT_MSG("BBBBBBBBB      B         BBBBBB    BBBBBB8   \r\n");
-  PRINT_MSG("B     BBG     BBB       BB    BB   BB    3B  \r\n");
-  PRINT_MSG("B      BB    BB BB     BB         BB         \r\n");
-  PRINT_MSG("B     BB5   BB   BB    BB         BB         \r\n");
-  PRINT_MSG("BBBBBBBBB  BB     BB    BBBBBB    BBBBBB   \r\n");
-  PRINT_MSG("BS5555     BB      BB    BBBBBB    BBBBBBB  \r\n");
-  PRINT_MSG("B;         BBGQ888;BB         BB         BB    \r\n");
-  PRINT_MSG("B5         DBBBBBBBBB         BB         BB  \r\n");
-  PRINT_MSG("BO         BB      BB  BB    wBB  BB    wBB  \r\n");
-  PRINT_MSG("BB         BB      BB   BBBBBB     BBBBBB   \r\n");
+  PRINT_MSG("BBBBBBBBBBBB       BBB         BBBBBB    BBBBBB8   \r\n");
+  PRINT_MSG("BBB     BBGB      BBBBB       BB    BB   BB    3B  \r\n");
+  PRINT_MSG("BBB      BBB    BBBB  BBB     BB         BB         \r\n");
+  PRINT_MSG("BBB     BB5B   BBBB    BBB    BB         BB         \r\n");
+  PRINT_MSG("BBBBBBBBBBBB  BBBB     BBBB    BBBBBB    BBBBBB   \r\n");
+  PRINT_MSG("BBBS5555      BBBB      BBBB    BBBBBB    BBBBBBB  \r\n");
+  PRINT_MSG("BBB;          BBBBGQ888;BBBB         BB         BB    \r\n");
+  PRINT_MSG("BBB5          BBDBBBBBBBBBBB         BB         BB  \r\n");
+  PRINT_MSG("BBBO          BBBB      BBBB  BB    wBB  BB    wBB  \r\n");
+  PRINT_MSG("BBBB          BBBB      BBBB   BBBBBB     BBBBBB   \r\n");
 }
 
 
@@ -212,10 +212,18 @@ int checkDefaultPing(void)
   unsigned int  isOk = -1;            // false
 
   for( i=0; i<20; i++)  {
-    PRINT_MSG(".");
+    if ( ((i+1)%2) ) {
+      PRINT_MSG(">>>>>>");
+      sleep(1);
+    }
+    else {
+      PRINT_MSG("\033[6D");
+      PRINT_MSG("------");
+      sleep(1);
+    }
+
     pingSuccess = ping(ipList[0]);
-    printf("pingSuccess = %d\n", pingSuccess);
-    sleep(1);
+//    printf("pingSuccess = %d\n", pingSuccess);
     if( pingSuccess == MAX_PING_COUNT )     {
 //      PRINT_MSG(".");
 //      pingSuccess = ping(ipList[0]);    // Re-ping to confirm
@@ -228,8 +236,10 @@ int checkDefaultPing(void)
     else {                   // Ping failed
       isOk = -1;
     }
-    sleep(1);
   }
+
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>\t\tTest");
 
   if (isOk == 0)
     return 0;
@@ -239,6 +249,32 @@ int checkDefaultPing(void)
   return 0;
 }
 
+
+void check_board(void)
+{
+  FILE *fp;
+  char buf[BUFSIZ], board[128];
+  char path[256], *bp, *sp;
+
+  memset (buf, 0, sizeof (buf));
+
+  PRINT_MSG("\n\r\n\rSystem information");
+  PRINT_MSG("\n\r======================================\n\r");
+
+  if ((fp = fopen ("/proc/octeon_info", "r")) ||  (fp = fopen (path, "r"))) {
+      while (fgets (buf, BUFSIZ, fp)) {
+        if (!strncmp (buf, "board_serial_number", strlen ("board_serial_number"))) {
+          PRINT_MSG(buf);
+          PRINT_MSG("\r");
+        }
+        else if (!strncmp (buf, "mac_addr_base", strlen ("mac_addr_base"))) {
+          PRINT_MSG(buf);
+          PRINT_MSG("\r");
+        }
+      }
+    fclose (fp);
+  }
+}
 
 /*
  ** Reboot the system
@@ -478,26 +514,20 @@ int LEDTest()
   system("/media/disk0/realtek_spd100");
 
   /* Wait a few seconds for nsm process to start up */
-  PRINT_MSG("Please wait for 5 or 10 seconds...\n\r");
+  PRINT_MSG(">>>>>>");
   for ( i=0; i<10; i++ ) {
-    PRINT_MSG("#");
-    sleep(1);
+    if ( ((i+1)%2) ) {
+      sleep(1);
+      PRINT_MSG("\033[6D");
+      PRINT_MSG("------");
+    }
+    else {
+      sleep(1);
+      PRINT_MSG("\033[6D");
+      PRINT_MSG(">>>>>>");
+    }
   }
-
-  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
-  PRINT_MSG("\r\nAre all LEDs green? (Y/n): ");
-
-  c = getAnswer(SERIAL_CONSOLE_INF);
-  sprintf (status, "%c\n\r", c);
-  PRINT_MSG(status);
-
-  /* User says "Yes", go to default mode. Test is done! */
-  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
-    return 0;
-  else
-    return -1;
-
-  return -1;
+  return 0;
 }
 
 //exist -> return 0, no exist -> 1
@@ -522,12 +552,12 @@ int usb_test(void)
 
   memset(status, 0x00, sizeof(status));
 
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\n\r\n\r============== USB Test ==============\n\r");
+//  PRINT_MSG("\033[0;37;40m");  // Black
+//  PRINT_MSG("\n\r\n\r============== USB Test ==============\n\r");
   //PRINT_MSG("Testing .....................\t");
   if ((ret = USBTest()) == 0)  {
     display_pass_msg();
-    PRINT_MSG("\n\r======================================\n\r");
+//    PRINT_MSG("\n\r======================================\n\r");
     return 0;
   }
   else
@@ -537,9 +567,9 @@ int usb_test(void)
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
-    display_fail_msg();
+//    display_fail_msg();
 //    PRINT_MSG("\n\r>>> USB Test Fail\n\r");
-    PRINT_MSG("\n\r======================================\n\r");
+//    PRINT_MSG("\n\r======================================\n\r");
     return -1;
 
 //    for (;;) {
@@ -561,10 +591,23 @@ int ping_test(void)
   char status[256];
   int testResult = 0;
 
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\n\r\n\r============== Ping Test =============\n\r");
+//  PRINT_MSG("\033[0;37;40m");  // Black
+//  PRINT_MSG("\n\r\n\r============== Ping Test =============\n\r");
   /* Check cpu idle by pinging to localhost address */
 
+///  sprintf(status, "Ready ping test .....");
+///  PRINT_MSG(status);
+  PRINT_MSG("\n\rDEFAULT PING\t\t");
+  ret = checkDefaultPing();
+
+  if ( ret < 0 ) {
+//    display_fail_msg();
+    return -1;
+  }
+  else {
+    PRINT_MSG("\n\r");
+  }
+#if 0
   // Ping each interface now...
   for ( i=0; i<MAX_IP; i++ )  {
     sprintf(status, "ping to (%s) %s.......", infNameList[i], ipList[i]);
@@ -587,7 +630,7 @@ int ping_test(void)
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
-    display_fail_msg();
+//    display_fail_msg();
 //    PRINT_MSG("\n\r>>> Ping Test Fail\n\r");
 //    PRINT_MSG("\n\r======================================\n\r");
 
@@ -599,6 +642,7 @@ int ping_test(void)
 //    }
     return -1;
   }
+#endif
 
   return 0;
 }
@@ -612,12 +656,12 @@ int rtc_test(void)
 
   memset(status, 0x00, sizeof(status));
 
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\n\r\n\r============== RTC Test ==============\n\r");
+//  PRINT_MSG("\033[0;37;40m");  // Black
+//  PRINT_MSG("\n\r\n\r============== RTC Test ==============\n\r");
   //PRINT_MSG("Testing .....................\t");
 
   if( (ret = RTCTest()) == 0 ) {
-    display_pass_msg();
+//    display_pass_msg();
     return 0;
   }
   else {
@@ -626,9 +670,9 @@ int rtc_test(void)
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
 //    PRINT_MSG("############# TEST FAILED ############\n\r");
-    display_fail_msg();
+//    display_fail_msg();
 //    PRINT_MSG("\n\r>>> RTC Test Fail\n\r");
-    PRINT_MSG("\n\r======================================\n\r");
+//    PRINT_MSG("\n\r======================================\n\r");
 
 //    for (;;) {
 //      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
@@ -692,7 +736,7 @@ int led_test(void)
 }
 
 
-void ready_test(void)
+int ready_test(void)
 {
   int ret = 0;
   char c;
@@ -701,13 +745,18 @@ void ready_test(void)
    ** When this app is called automatically on start up, we need to pause the execution for some seconds.
    ** This is to guarantee that all services and processes have completely started.
    */
-  PRINT_MSG("\n\rPlease wait for all services to be ready \n\r");
-  PRINT_MSG("The Orange LEDs will go Green\n\r");
+  //PRINT_MSG("\n\rPlease wait for all services to be ready \n\r");
+  //PRINT_MSG("The Orange LEDs will go Green\n\r");
+
+  PRINT_MSG("\033[0;37;40m");  // Black
+  PRINT_MSG("\n\r\n\r============== Ping Test =============\n\r");
 
   ret = checkDefaultPing();
 
   // CPU is busy. We can't get accurate ping test.
   if ( ret == -1 ) {
+    return -1;
+/*
     PRINT_MSG("\n\rSomething's wrong with the system\n\r");
     PRINT_MSG("\033[41m");  // RED
     PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
@@ -726,31 +775,105 @@ void ready_test(void)
       if (c == 'H')
         break;
     }
+*/
   }
+/*
   PRINT_MSG("\n\r");
 
   PRINT_MSG("\n\rPress Any KEY to Start Testing... \n\r");
   getAnswer(SERIAL_CONSOLE_INF);
+*/
+  return 0;
 }
 
 int main (int argc, char *argv[])
 {
   int i = 0;
+  char c;
+  char status[256];
   int result[5];
   int index = 0;
 
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\033[2J");
-  PRINT_MSG("\n\r\n\r\tWelcome to Factory Test\n\r");
-
   index = 0;
   memset(&result, 0x00, sizeof(result));
+  memset(&status, 0x00, sizeof(status));
 
-  ready_test();
+  PRINT_MSG("\033[0;37;40m");  // Black
+  PRINT_MSG("\033[2J"); // Clear screen
+  PRINT_MSG("\n\r\n\r\n\r\n\r\tWelcome to Factory Test");
+  check_board();
+
+#if 0
+  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
+  PRINT_MSG("\r\nAre all LEDs orange? (Y/n): ");
+
+  c = getAnswer(SERIAL_CONSOLE_INF);
+  sprintf (status, "%c\n\r", c);
+  PRINT_MSG(status);
+
+#if 0
+  /* User says "Yes", go to default mode. Test is done! */
+  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
+    return 0;
+  else
+    return -1;
+
+  return -1;
+#endif
+#endif
+
+  PRINT_MSG("\n\r\n\rTEST\t\t\tRunning\t\tRESULT");
+  PRINT_MSG("\n\r===============================================");
+
+  PRINT_MSG("\n\rUSB\t\t\t");
   result[index++] = usb_test();
-  result[index++] = ping_test();
+  PRINT_MSG(">>>>>>");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG("------");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>\t\tTest");
+
+  PRINT_MSG("\n\rRTC\t\t\t");
   result[index++] = rtc_test();
-  //result[index++] = led_test();
+  PRINT_MSG(">>>>>>");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG("------");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>\t\tTest");
+
+  result[index++] = ping_test();
+
+  PRINT_MSG("LED\t\t\t");
+  result[index++] = LEDTest();
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>\t\tTest");
+
+#if 1
+  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
+  PRINT_MSG("\r\nAre all LEDs green? (Y/n): ");
+
+  c = getAnswer(SERIAL_CONSOLE_INF);
+  sprintf (status, "%c\n\r", c);
+  PRINT_MSG(status);
+
+#if 0
+  /* User says "Yes", go to default mode. Test is done! */
+  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
+    return 0;
+  else
+    return -1;
+
+  return -1;
+#endif
+#endif
+//  result[index++] = ();
+  //ready_test();
+//  result[index++] = ping_test();
+//  result[index++] = led_test();
 
 /*
   for ( i = 0; i < index; i++ ) {
