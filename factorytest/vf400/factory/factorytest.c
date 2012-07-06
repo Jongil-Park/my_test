@@ -752,6 +752,7 @@ int main (int argc, char *argv[])
   result[index++] = rtc_test();
   //result[index++] = led_test();
 
+/*
   for ( i = 0; i < index; i++ ) {
     if ( result[i] < 0 ) {
       PRINT_MSG("\033[41m");  // RED
@@ -759,7 +760,7 @@ int main (int argc, char *argv[])
       printf("\nTest Fail - Index[%d]", i);
     }
   }
-
+*/
   //rebootSystem();
   exit(0);
 }
