@@ -10,13 +10,15 @@ struct factoytest_db {
   char   *name;
   int      (*func) (void);
   void    (*pass) (void);
-//  void    (*fail) (void);
   char   *fail;
 };
 
 
 #define ASCII_ESC 27
 
+///////////////////////////////////////////////////////////////////////////////
+// failure message list
+///////////////////////////////////////////////////////////////////////////////
 static char  USBfailmsg[] =
   " - USB \t\t: "
   "USB device test failed.\r\n";
@@ -41,6 +43,10 @@ static char  LEDfailmsg_green[] =
   " - LED(GREEN) \t: "
   "LED (GREEN) test failed.\r\n";
 
+
+///////////////////////////////////////////////////////////////////////////////
+// result message list
+///////////////////////////////////////////////////////////////////////////////
 void display_pass_msg(void)
 {
   PRINT_MSG("\n\r");
@@ -236,9 +242,10 @@ unsigned int getProcessID(char *p_processname)
   return result;
 }
 
-/*
- ** Check if the CPU is ready for ping test
- */
+
+///////////////////////////////////////////////////////////////////////////////
+// DEFAULT ping test function
+///////////////////////////////////////////////////////////////////////////////
 int DEFAULTtest(void)
 {
   int        i,j;
@@ -273,6 +280,9 @@ int DEFAULTtest(void)
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
+// board check function
+///////////////////////////////////////////////////////////////////////////////
 void CHECKboard(void)
 {
   FILE *fp;
@@ -299,9 +309,36 @@ void CHECKboard(void)
   }
 }
 
-/*
- ** Reboot the system
- */
+
+
+///////////////////////////////////////////////////////////////////////////////
+// print serial number function
+///////////////////////////////////////////////////////////////////////////////
+void PRINTserialnumber(void)
+{
+  FILE *fp;
+  char buf[BUFSIZ], board[128];
+  char path[256], *bp, *sp;
+
+  memset (buf, 0, sizeof (buf));
+  if ((fp = fopen ("/proc/octeon_info", "r")) ||  (fp = fopen (path, "r"))) {
+      while (fgets (buf, BUFSIZ, fp)) {
+        if (!strncmp (buf, "board_serial_number", strlen ("board_serial_number"))) {
+          PRINT_MSG("BOARD SN ");
+          memcpy(buf, &buf[strlen ("board_serial_number")], BUFSIZ);
+          PRINT_MSG(buf);
+          PRINT_MSG("\r");
+        }
+      }
+    fclose (fp);
+  }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// reboot function
+///////////////////////////////////////////////////////////////////////////////
 void rebootSystem()
 {
   char status[256];
@@ -315,9 +352,9 @@ void rebootSystem()
 }
 
 
-/*
- ** Ping to a specified IP address
-*/
+///////////////////////////////////////////////////////////////////////////////
+// ping function
+///////////////////////////////////////////////////////////////////////////////
 int ping (const char ip[])
 {
   char buf[MAX_PING_RESULT_LEN + 1];
@@ -358,9 +395,9 @@ int ping (const char ip[])
 }
 
 
-/*
- **
-*/
+///////////////////////////////////////////////////////////////////////////////
+// USB test function
+///////////////////////////////////////////////////////////////////////////////
 int USBTest()
 {
   FILE *fp;
@@ -439,6 +476,9 @@ int USBTest()
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
+// RTC test function
+///////////////////////////////////////////////////////////////////////////////
 int RTCTest()
 {
   FILE *fp;
@@ -475,9 +515,9 @@ int RTCTest()
 }
 
 
-/*
- **
-*/
+///////////////////////////////////////////////////////////////////////////////
+// LED test function (GREEN)
+///////////////////////////////////////////////////////////////////////////////
 int LEDTest_green()
 {
   int i = 0;
@@ -505,14 +545,11 @@ int LEDTest_green()
 
 
   /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
-  //PRINT_MSG("\r\nAre all LEDs orange? (Y/n): ");
   sleep(1);
   PRINT_MSG("\033[6D");
   PRINT_MSG("Y/N...");
 
   c = getAnswer(SERIAL_CONSOLE_INF);
-//  sprintf (status, "%c\n\r", c);
-//  PRINT_MSG(status);
   PRINT_MSG("\033[6D");
   PRINT_MSG(">>>>>>");
 
@@ -524,6 +561,9 @@ int LEDTest_green()
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
+// LED test function (ORANGE)
+///////////////////////////////////////////////////////////////////////////////
 int LEDTest_orange()
 {
   int i = 0;
@@ -544,21 +584,9 @@ int LEDTest_orange()
 }
 
 
-//exist -> return 0, no exist -> 1
-int checkAutoTest(const char *pFilename)
-{
-  FILE *fp;
-
-  fp=fopen(pFilename,"r");
-  if(fp<=0)
-    return 1;
-
-  fclose(fp);
-
-  return 0;
-}
-
-
+///////////////////////////////////////////////////////////////////////////////
+// Ping test function
+///////////////////////////////////////////////////////////////////////////////
 int PINGtest(void)
 {
   int i = 0;
@@ -598,6 +626,7 @@ struct factoytest_db func_table[] =  {
   {"LED(GREEN)",    LEDTest_green,      display_pass_msg,   LEDfailmsg_green},
   {"",              NULL,               NULL,               NULL}
 };
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // Main Function
@@ -652,8 +681,10 @@ int main (int argc, char *argv[])
     display_fail_msg();
     PRINT_MSG("\r\n");
 
-    PRINT_MSG("\n\r\n\r    FAILED LIST");
-    PRINT_MSG("\n\r===============================================");
+    PRINT_MSG("\n\r\n\r # FAILED LIST");
+    PRINT_MSG("\n\r # ");
+    PRINTserialnumber();
+    PRINT_MSG("===============================================");
     PRINT_MSG("\r\n");
     for ( index = 0; func_table[index].name[0] != '\0'; index++) {
       if ( result[index] < 0 ) {
@@ -661,8 +692,6 @@ int main (int argc, char *argv[])
       }
     }
   }
-
-
 
   exit(0);
 }
