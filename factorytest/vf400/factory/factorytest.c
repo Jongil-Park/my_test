@@ -6,7 +6,40 @@ extern const char *infNameList[];
 #define  PRINT_MSG(msg)    redirectOutput(SERIAL_CONSOLE_INF, msg)
 #define  PRINT_DONEMSG    PRINT_MSG("DONE\n\r")
 
+struct factoytest_db {
+  char   *name;
+  int      (*func) (void);
+  void    (*pass) (void);
+//  void    (*fail) (void);
+  char   *fail;
+};
+
+
 #define ASCII_ESC 27
+
+static char  USBfailmsg[] =
+  " - USB \t\t: "
+  "USB device test failed.\r\n";
+
+static char  RTCfailmsg[] =
+  " - RTC \t\t: "
+  "RTC device test failed.\r\n";
+
+static char  DEFAULTfailmsg[] =
+  " - DEFAULT PING \t: "
+  "DEFAULT ping test failed.\r\n";
+
+static char  LEDfailmsg_orange[] =
+  " - LED(ORANGE) \t: "
+  "LED (ORANGE) test failed.\r\n";
+
+static char  PINGfailmsg[] =
+  " - PING \t: "
+  "PING test failed.\r\n";
+
+static char  LEDfailmsg_green[] =
+  " - LED(GREEN) \t: "
+  "LED (GREEN) test failed.\r\n";
 
 void display_pass_msg(void)
 {
@@ -34,10 +67,11 @@ void display_fail_msg(void)
   PRINT_MSG("BBBBBBBBBB   .BBBB   BBBB     BBBB    BBBB        \r\n");
   PRINT_MSG("BBBBBBB8BB   BBBB     BBBB    BBBB    BBBB        \r\n");
   PRINT_MSG("BBBB         BBBB     BBBB    BBBB    BBBB        \r\n");
-  PRINT_MSG("B5BB         BBBBBBBBBBBBB    BBBB    BBBB        \r\n");
+  PRINT_MSG("B5BB        BBBBBBBBBBBBBBB   BBBB    BBBB        \r\n");
   PRINT_MSG("B5BB        BBBB       BBBB   BBBB    BBBBBBBBBBBB\r\n");
   PRINT_MSG("B5BB        DBBB:      BBBB   BBBB    BBBBBBBBBBBB\r\n");
 }
+
 
 
 
@@ -205,14 +239,17 @@ unsigned int getProcessID(char *p_processname)
 /*
  ** Check if the CPU is ready for ping test
  */
-int checkDefaultPing(void)
+int DEFAULTtest(void)
 {
   int        i,j;
   int        pingSuccess = 0;
   unsigned int  isOk = -1;            // false
 
+  PRINT_MSG("\n\rDEFAULT PING\t\t");
+  PRINT_MSG(">>>>>>");
   for( i=0; i<20; i++)  {
     if ( ((i+1)%2) ) {
+      PRINT_MSG("\033[6D");
       PRINT_MSG(">>>>>>");
       sleep(1);
     }
@@ -223,34 +260,20 @@ int checkDefaultPing(void)
     }
 
     pingSuccess = ping(ipList[0]);
-//    printf("pingSuccess = %d\n", pingSuccess);
     if( pingSuccess == MAX_PING_COUNT )     {
-//      PRINT_MSG(".");
-//      pingSuccess = ping(ipList[0]);    // Re-ping to confirm
-//      printf("pingSuccess = %d\n", pingSuccess);
-//      if( pingSuccess == MAX_PING_COUNT ) {   // Ping success
         isOk = 0;
         break;
-//      }
     }
     else {                   // Ping failed
       isOk = -1;
     }
   }
 
-  PRINT_MSG("\033[6D");
-  PRINT_MSG(">>>>>>\t\tTest");
-
-  if (isOk == 0)
-    return 0;
-  else
-    return -1;
-
-  return 0;
+  return isOk;
 }
 
 
-void check_board(void)
+void CHECKboard(void)
 {
   FILE *fp;
   char buf[BUFSIZ], board[128];
@@ -351,6 +374,13 @@ int USBTest()
   char status[1024];
   struct stat sts;
 
+  PRINT_MSG("\n\rUSB\t\t\t");
+  PRINT_MSG(">>>>>>");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG("------");
+  sleep(1);
+
   /* Create some files, write some texts on the usb device */
   for(i=0; i<5; i++) {
     /* Make filename first */
@@ -405,69 +435,9 @@ int USBTest()
   }
   sync();
 
-
   return 0;
 }
 
-/*
- **
-*/
-int SATATest()
-{
-  FILE *fp;
-  int i, ret = 0;
-  const char source[] = "/dev/sda1";
-  const char target[] = "/media/disk1";
-  const char default_filename[] = "/media/disk1/testfile";
-  char filename[MAX_FILENAME_LEN];
-  const char basetext[] = "SATA Testing. This is file #";
-  char text[1024];
-  char status[1024];
-  struct stat sts;
-
-
-  /* Create files from the sata */
-  for(i=0; i<5; i++) {
-    /* Make filename first */
-    sprintf (filename, "%s%d", default_filename, i);
-
-    fp = fopen(filename, "w");
-    if (fp) {
-      sprintf(text, "%s%d", basetext, i);
-      fprintf (fp, text);
-    }
-    else {
-      sprintf (status, "%s\n\r", strerror(errno));
-      PRINT_MSG(status);
-      return -1;
-    }
-
-    fclose(fp);
-  }
-
-  /* Sleep for some seconds before sync */
-  for(i=0; i<100; i++) {
-    usleep(1000);
-  }
-  sync();
-
-  for(i=0; i<5; i++)  {
-    sprintf(filename, "%s%d", default_filename, i);
-    if (stat(target, &sts) == -1)
-      return -1;
-  }
-
-  /* Delete files from the sata */
-  for(i=0; i<5; i++) {
-    sprintf(filename, "%s%d", default_filename, i);
-    if(remove(filename))   {
-      sprintf(status, "%s\n\r", strerror(errno));
-      PRINT_MSG(status);
-    }
-  }
-  sync();
-  return 0;
-}
 
 int RTCTest()
 {
@@ -475,6 +445,14 @@ int RTCTest()
   char pBuf[1024];
 
   memset(pBuf, 0, sizeof(pBuf));
+
+
+  PRINT_MSG("\n\rRTC\t\t\t");
+  PRINT_MSG(">>>>>>");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG("------");
+  sleep(1);
 
   system("date 101105022011;hwclock -w");
 
@@ -489,10 +467,6 @@ int RTCTest()
 
   pclose(fp);
 
-  //PRINT_MSG("\n\r");
-  //PRINT_MSG(pBuf);
-  //PRINT_MSG("\n\r");
-
   if(strncmp("Tue Oct 11 05:02:00 2011  0.000000 second", pBuf, 14))   {
     return -1;
   }
@@ -504,7 +478,7 @@ int RTCTest()
 /*
  **
 */
-int LEDTest()
+int LEDTest_green()
 {
   int i = 0;
   char c;
@@ -514,6 +488,7 @@ int LEDTest()
   system("/media/disk0/realtek_spd100");
 
   /* Wait a few seconds for nsm process to start up */
+  PRINT_MSG("\n\rLED (GREEN)\t\t");
   PRINT_MSG(">>>>>>");
   for ( i=0; i<10; i++ ) {
     if ( ((i+1)%2) ) {
@@ -527,8 +502,47 @@ int LEDTest()
       PRINT_MSG(">>>>>>");
     }
   }
-  return 0;
+
+
+  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
+  //PRINT_MSG("\r\nAre all LEDs orange? (Y/n): ");
+  sleep(1);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG("Y/N...");
+
+  c = getAnswer(SERIAL_CONSOLE_INF);
+//  sprintf (status, "%c\n\r", c);
+//  PRINT_MSG(status);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>");
+
+  /* User says "Yes", go to default mode. Test is done! */
+  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
+    return 0;
+
+  return -1;
 }
+
+
+int LEDTest_orange()
+{
+  int i = 0;
+  char c;
+  char status[1024];
+
+  PRINT_MSG("\n\rLED (ORANGE)\t\tY/N...");
+
+  c = getAnswer(SERIAL_CONSOLE_INF);
+  PRINT_MSG("\033[6D");
+  PRINT_MSG(">>>>>>");
+
+  /* User says "Yes", go to default mode. Test is done! */
+  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
+    return 0;
+
+  return -1;
+}
+
 
 //exist -> return 0, no exist -> 1
 int checkAutoTest(const char *pFilename)
@@ -544,347 +558,112 @@ int checkAutoTest(const char *pFilename)
   return 0;
 }
 
-int usb_test(void)
-{
-  char c = 0;
-  int ret = 0;
-  char status[512];
 
-  memset(status, 0x00, sizeof(status));
-
-//  PRINT_MSG("\033[0;37;40m");  // Black
-//  PRINT_MSG("\n\r\n\r============== USB Test ==============\n\r");
-  //PRINT_MSG("Testing .....................\t");
-  if ((ret = USBTest()) == 0)  {
-    display_pass_msg();
-//    PRINT_MSG("\n\r======================================\n\r");
-    return 0;
-  }
-  else
-  {
-//    PRINT_MSG("\033[41m");  // RED
-//    PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    display_fail_msg();
-//    PRINT_MSG("\n\r>>> USB Test Fail\n\r");
-//    PRINT_MSG("\n\r======================================\n\r");
-    return -1;
-
-//    for (;;) {
-//      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
-//      usleep(1000);
-//      if (c == 'H')
-//        break;
-//    }
-  }
-
-  return 0;
-}
-
-int ping_test(void)
+int PINGtest(void)
 {
   int i = 0;
   char c = 0;
   int ret = 0;
   char status[256];
-  int testResult = 0;
+  int isOK = 0;
 
-//  PRINT_MSG("\033[0;37;40m");  // Black
-//  PRINT_MSG("\n\r\n\r============== Ping Test =============\n\r");
-  /* Check cpu idle by pinging to localhost address */
-
-///  sprintf(status, "Ready ping test .....");
-///  PRINT_MSG(status);
-  PRINT_MSG("\n\rDEFAULT PING\t\t");
-  ret = checkDefaultPing();
-
-  if ( ret < 0 ) {
-//    display_fail_msg();
-    return -1;
-  }
-  else {
-    PRINT_MSG("\n\r");
-  }
-#if 0
   // Ping each interface now...
   for ( i=0; i<MAX_IP; i++ )  {
-    sprintf(status, "ping to (%s) %s.......", infNameList[i], ipList[i]);
+    sprintf(status, "\n\rPING (%s) %s\t", infNameList[i], ipList[i]);
     PRINT_MSG(status);
 
     if( (ret = ping(ipList[i])) == MAX_PING_COUNT ) {
-      //PRINT_MSG("PASSED\n\r");
-      PRINT_MSG("\n\r");
+      PRINT_MSG(">>>>>>\t\tP");
     }
     else {
-      PRINT_MSG("FAILED\n\r");
-      testResult=-1;
+      isOK = -1;
+      PRINT_MSG(">>>>>>\t\tFAIL");
     }
   }
 
-  if ( testResult == -1 ) {
-//    return -1;
-//    PRINT_MSG("\033[41m");  // RED
-//    PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    display_fail_msg();
-//    PRINT_MSG("\n\r>>> Ping Test Fail\n\r");
-//    PRINT_MSG("\n\r======================================\n\r");
-
-//    for (;;) {
-//      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
-//      usleep(1000);
-//      if (c == 'H')
-//        break;
-//    }
-    return -1;
-  }
-#endif
-
-  return 0;
-}
-
-int rtc_test(void)
-{
-  char c = 0;
-  int ret = 0;
-  char status[512];
-  int testResult = 0;
-
-  memset(status, 0x00, sizeof(status));
-
-//  PRINT_MSG("\033[0;37;40m");  // Black
-//  PRINT_MSG("\n\r\n\r============== RTC Test ==============\n\r");
-  //PRINT_MSG("Testing .....................\t");
-
-  if( (ret = RTCTest()) == 0 ) {
-//    display_pass_msg();
-    return 0;
-  }
-  else {
-//    PRINT_MSG("\033[41m");  // RED
-//    PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    PRINT_MSG("############# TEST FAILED ############\n\r");
-//    display_fail_msg();
-//    PRINT_MSG("\n\r>>> RTC Test Fail\n\r");
-//    PRINT_MSG("\n\r======================================\n\r");
-
-//    for (;;) {
-//      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
-//      usleep(1000);
-//      if (c == 'H')
-//        break;
-//    }
-    return -1;
-  }
-
-  return 0;
+  PRINT_MSG("\n\rPING (TOTAL)\t\t>>>>>>");
+  return isOK;
 }
 
 
-int led_test(void)
-{
-  char c = 0;
-  int ret = 0;
-  char status[512];
-  int testResult = 0;
+///////////////////////////////////////////////////////////////////////////////
+// Factory test table.
+///////////////////////////////////////////////////////////////////////////////
+struct factoytest_db func_table[] =  {
+  {"USB",           USBTest,            display_pass_msg,   USBfailmsg},
+  {"RTC",           RTCTest,            display_pass_msg,   RTCfailmsg},
+  {"DEFAUT",        DEFAULTtest,        display_pass_msg,   DEFAULTfailmsg},
+  {"LED(ORANGE)",   LEDTest_orange,     display_pass_msg,   LEDfailmsg_orange},
+  {"PING",          PINGtest,           display_pass_msg,   PINGfailmsg},
+  {"LED(GREEN)",    LEDTest_green,      display_pass_msg,   LEDfailmsg_green},
+  {"",              NULL,               NULL,               NULL}
+};
 
-  memset(status, 0x00, sizeof(status));
-
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\n\r\n\r============== LED Test ==============\n\r");
-  if( (ret = LEDTest()) == 0 ) {
-    PRINT_MSG("............................\tPASSED");
-    PRINT_MSG("\n\r\n\r============= TEST PASSED ============\n\r");
-    PRINT_MSG("============= TEST PASSED ============\n\r");
-    PRINT_MSG("============= TEST PASSED ============\n\r");
-    PRINT_MSG("============= TEST PASSED ============\n\r");
-
-    display_pass_msg();
-
-    PRINT_MSG("Running the same test in the next boot...\n\r");
-    PRINT_MSG("Now reboot the system  ");
-    //rebootSystem();
-    return 0;
-  }
-  else {
-    return -1;
-    PRINT_MSG("............................\tFAILED");
-    PRINT_MSG("\033[41m");  // RED
-    PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-
-    display_fail_msg();
-
-    PRINT_MSG("Please try the test again.\n\r");
-    PRINT_MSG("Please try system reboot  again.\n\r");
-
-    for (;;) {
-      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
-      usleep(1000);
-      if (c == 'H')
-        break;
-    }
-  }
-}
-
-
-int ready_test(void)
-{
-  int ret = 0;
-  char c;
-
-  /*
-   ** When this app is called automatically on start up, we need to pause the execution for some seconds.
-   ** This is to guarantee that all services and processes have completely started.
-   */
-  //PRINT_MSG("\n\rPlease wait for all services to be ready \n\r");
-  //PRINT_MSG("The Orange LEDs will go Green\n\r");
-
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\n\r\n\r============== Ping Test =============\n\r");
-
-  ret = checkDefaultPing();
-
-  // CPU is busy. We can't get accurate ping test.
-  if ( ret == -1 ) {
-    return -1;
-/*
-    PRINT_MSG("\n\rSomething's wrong with the system\n\r");
-    PRINT_MSG("\033[41m");  // RED
-    PRINT_MSG("\n\r\n\r############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-    PRINT_MSG("############# TEST FAILED ############\n\r");
-
-    display_fail_msg();
-
-    PRINT_MSG("Please try the test again.\n\r");
-    PRINT_MSG("Please try system reboot  again.\n\r");
-
-    for (;;) {
-      c = getHiddenAnswer(SERIAL_CONSOLE_INF);
-      usleep(1000);
-      if (c == 'H')
-        break;
-    }
-*/
-  }
-/*
-  PRINT_MSG("\n\r");
-
-  PRINT_MSG("\n\rPress Any KEY to Start Testing... \n\r");
-  getAnswer(SERIAL_CONSOLE_INF);
-*/
-  return 0;
-}
-
+///////////////////////////////////////////////////////////////////////////////
+// Main Function
+///////////////////////////////////////////////////////////////////////////////
 int main (int argc, char *argv[])
 {
   int i = 0;
   char c;
   char status[256];
-  int result[5];
-  int index = 0;
+  int result[32];
+  int index =0;
+  int isOK = 0;
 
   index = 0;
   memset(&result, 0x00, sizeof(result));
   memset(&status, 0x00, sizeof(status));
 
-  PRINT_MSG("\033[0;37;40m");  // Black
-  PRINT_MSG("\033[2J"); // Clear screen
+  PRINT_MSG("\033[0;37;40m");   // Black
+  PRINT_MSG("\033[2J");         // Clear screen
   PRINT_MSG("\n\r\n\r\n\r\n\r\tWelcome to Factory Test");
-  check_board();
 
-#if 0
-  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
-  PRINT_MSG("\r\nAre all LEDs orange? (Y/n): ");
+  // print board information
+  CHECKboard();
 
-  c = getAnswer(SERIAL_CONSOLE_INF);
-  sprintf (status, "%c\n\r", c);
-  PRINT_MSG(status);
-
-#if 0
-  /* User says "Yes", go to default mode. Test is done! */
-  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
-    return 0;
-  else
-    return -1;
-
-  return -1;
-#endif
-#endif
-
+  // run factorytest
   PRINT_MSG("\n\r\n\rTEST\t\t\tRunning\t\tRESULT");
   PRINT_MSG("\n\r===============================================");
 
-  PRINT_MSG("\n\rUSB\t\t\t");
-  result[index++] = usb_test();
-  PRINT_MSG(">>>>>>");
-  sleep(1);
-  PRINT_MSG("\033[6D");
-  PRINT_MSG("------");
-  sleep(1);
-  PRINT_MSG("\033[6D");
-  PRINT_MSG(">>>>>>\t\tTest");
-
-  PRINT_MSG("\n\rRTC\t\t\t");
-  result[index++] = rtc_test();
-  PRINT_MSG(">>>>>>");
-  sleep(1);
-  PRINT_MSG("\033[6D");
-  PRINT_MSG("------");
-  sleep(1);
-  PRINT_MSG("\033[6D");
-  PRINT_MSG(">>>>>>\t\tTest");
-
-  result[index++] = ping_test();
-
-  PRINT_MSG("LED\t\t\t");
-  result[index++] = LEDTest();
-  PRINT_MSG("\033[6D");
-  PRINT_MSG(">>>>>>\t\tTest");
-
-#if 1
-  /* Verify with user if all eth ports' color is correct, i.e. they should all be green color */
-  PRINT_MSG("\r\nAre all LEDs green? (Y/n): ");
-
-  c = getAnswer(SERIAL_CONSOLE_INF);
-  sprintf (status, "%c\n\r", c);
-  PRINT_MSG(status);
-
-#if 0
-  /* User says "Yes", go to default mode. Test is done! */
-  if ( (c == 'Y') || (c == 'y') || (c == '\n')  || (c == '\r') )
-    return 0;
-  else
-    return -1;
-
-  return -1;
-#endif
-#endif
-//  result[index++] = ();
-  //ready_test();
-//  result[index++] = ping_test();
-//  result[index++] = led_test();
-
-/*
-  for ( i = 0; i < index; i++ ) {
-    if ( result[i] < 0 ) {
-      PRINT_MSG("\033[41m");  // RED
-      PRINT_MSG("\n\r\n\r");
-      printf("\nTest Fail - Index[%d]", i);
+  for ( index = 0; func_table[index].name[0] != '\0'; index++) {
+    result[index] = func_table[index].func();
+    if ( result[index] == 0 ) {
+      PRINT_MSG("\033[6D");
+      PRINT_MSG(">>>>>>\t\tP");
+    }
+    else {
+      isOK = 1;
+      PRINT_MSG("\033[6D");
+      PRINT_MSG(">>>>>>\t\tFAIL");
     }
   }
-*/
-  //rebootSystem();
+
+  // print result
+  PRINT_MSG("\n\r\n\r");
+  PRINT_MSG("\n\r\n\r    FACTORY TEST RESULT");
+  PRINT_MSG("\n\r===============================================");
+  if ( isOK == 0 ) {
+    display_pass_msg();
+  }
+  else {
+    PRINT_MSG("\033[41m");  // RED
+    PRINT_MSG("\n\r\n\r");
+    display_fail_msg();
+    PRINT_MSG("\r\n");
+
+    PRINT_MSG("\n\r\n\r    FAILED LIST");
+    PRINT_MSG("\n\r===============================================");
+    PRINT_MSG("\r\n");
+    for ( index = 0; func_table[index].name[0] != '\0'; index++) {
+      if ( result[index] < 0 ) {
+        PRINT_MSG(func_table[index].fail);
+      }
+    }
+  }
+
+
+
   exit(0);
 }
 
